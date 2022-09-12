@@ -47,9 +47,10 @@ p {
 /*The widths are in a percentage!*/
 header {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	border-bottom: 3px solid #77a466; 
 	margin: 0 auto;
 	display: flex;
+	text-align: center;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
@@ -59,6 +60,7 @@ header h1 {
 	margin: 0;
 	padding: 38px 0;
 	border-bottom: 3px solid #77a466;
+	width: 100%;
 }
 header h1 span {
 	color: #77a466;
@@ -182,28 +184,31 @@ footer span {
 
 @media all and (min-width: 768px) {
 	/* tablet styles here */
+
 	.bottom-section {
 		border-top: 3px solid #77a466;
 		align-items: center;
 		justify-content: center;
-		flex: auto;
 	}
 	.section-one {
 		align-items: center;
 		justify-content: center;
-		flex: auto;
+		width: 33%;
+		padding-bottom: 45px;
 	}
 	.section-two {
 		border-left: 1px solid #77a466;
 		border-right: 1px solid #77a466;
 		align-items: center;
 		justify-content: center;
-		flex: auto;
+		width: 33%;
+		padding-bottom: 20px;
 	}
 	.section-three {
 		align-items: center;
 		justify-content: center;
-		flex: auto;
+		width: 33%;
+		padding-bottom: 90px;
 	}
 }
 
@@ -211,7 +216,6 @@ footer span {
 	/*desktop styles here */
 	header {
 		display: flex;
-		border-bottom: 3px solid #77a466;
 		width: 100%;
 	}
 	header h1 {
@@ -221,14 +225,18 @@ footer span {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border-style: none;
+		
 	}
-	nav {
-		width: 40%;
+	header nav {
+		width: 40%;	
 	}
 	header nav ul {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		
+	}
+	.section-two {
+		padding-bottom: 35px;
 	}
 }
